@@ -1,0 +1,30 @@
+{
+  "name": "uglichskaya-industrial",
+  "colors": {
+    "background": "#eef1ed",
+    "foreground": "#121516",
+    "surface": "#fbfcf8",
+    "surfaceMuted": "#dfe5df",
+    "ink": "#07090a",
+    "steel": "#2d3536",
+    "muted": "#5a6462",
+    "line": "#cfd7d2",
+    "signal": "#ffc72c",
+    "brand": "#d3262f",
+    "brandStrong": "#a8121b",
+    "electric": "#8be8ff"
+  },
+  "radius": {
+    "card": "8px",
+    "control": "8px"
+  },
+  "materials": {
+    "glassPanel": "blurred graphite glass with white inner highlight",
+    "photoOverlay": "dark graphite gradient over industrial workshop photography",
+    "hazardStripe": "amber and black diagonal safety stripe"
+  },
+  "typography": {
+    "family": "system-ui, -apple-system, BlinkMacSystemFont, Segoe UI, sans-serif",
+    "letterSpacing": "0"
+  }
+}
