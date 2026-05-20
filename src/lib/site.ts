@@ -17,3 +17,12 @@ export const siteConfig = {
   ratingCount: 60,
   reviewCount: 30,
 } as const;
+
+const publicBasePath = (process.env.NEXT_PUBLIC_BASE_PATH || "").replace(
+  /\/$/,
+  "",
+);
+
+export function publicAssetPath(path: `/${string}`) {
+  return `${publicBasePath}${path}`;
+}

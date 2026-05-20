@@ -9,6 +9,9 @@ const githubPagesBasePath = `/${githubRepositoryName}`;
 
 const nextConfig: NextConfig = {
   allowedDevOrigins: ["127.0.0.1"],
+  env: {
+    NEXT_PUBLIC_BASE_PATH: isGitHubPages ? githubPagesBasePath : "",
+  },
   ...(isGitHubPages
     ? {
         assetPrefix: `${githubPagesBasePath}/`,

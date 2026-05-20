@@ -22,7 +22,7 @@ import { LeadForm } from "@/components/lead-form";
 import { MobileCta } from "@/components/mobile-cta";
 import { SiteHeader } from "@/components/site-header";
 import { leadServiceOptions } from "@/lib/leads/options";
-import { siteConfig } from "@/lib/site";
+import { publicAssetPath, siteConfig } from "@/lib/site";
 
 type IconItem = {
   title: string;
@@ -245,7 +245,7 @@ export default function Home() {
       <main className="industrial-shell overflow-hidden bg-background pb-24 md:pb-0">
         <section className="relative min-h-[86svh] overflow-hidden bg-ink text-white">
           <Image
-            src="/industrial-hero-tire-service.png"
+            src={publicAssetPath("/industrial-hero-tire-service.png")}
             alt="Индустриальный шиномонтажный бокс с мастером и станком"
             fill
             priority
@@ -408,7 +408,7 @@ export default function Home() {
           <div className="relative mx-auto grid max-w-7xl gap-10 px-4 sm:px-6 lg:grid-cols-[0.95fr_1.05fr] lg:items-center lg:px-8">
             <div className="relative min-h-[420px] overflow-hidden rounded-lg border border-white/12">
               <Image
-                src="/industrial-balancing-wheel.png"
+                src={publicAssetPath("/industrial-balancing-wheel.png")}
                 alt="Балансировка колеса на промышленном станке"
                 fill
                 sizes="(min-width: 1024px) 45vw, 100vw"
@@ -517,7 +517,7 @@ export default function Home() {
 
             <div className="relative min-h-[460px] overflow-hidden rounded-lg border border-line bg-ink shadow-[0_24px_70px_rgba(15,18,20,0.18)]">
               <Image
-                src="/industrial-tire-storage.png"
+                src={publicAssetPath("/industrial-tire-storage.png")}
                 alt="Индустриальная зона хранения шин"
                 fill
                 sizes="(min-width: 1024px) 42vw, 100vw"
